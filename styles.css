@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #cart-content {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  

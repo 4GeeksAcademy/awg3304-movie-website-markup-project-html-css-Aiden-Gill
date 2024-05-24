@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "UniversalCart",
+    "version": "1.0",
+    "description": "Aggregate carts from various shopping sites for a one-click purchase.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.amazon.com/*", "https://*.ebay.com/*", "https://*.walmart.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
